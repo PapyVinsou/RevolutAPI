@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RevolutAPI.Models.Authorization
+﻿namespace RevolutAPI.Models.Authorization
 {
-    public class RefreshAccessTokenModel
+    internal class RefreshAccessTokenModel
     {
         public string PrivateCert { get; set; }
         public string CertificatePassword { get; set; }

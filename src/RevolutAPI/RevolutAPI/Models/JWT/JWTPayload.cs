@@ -1,19 +1,25 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace RevolutAPI.Models.JWT
 {
-    public class JWTPayload
+    internal class JwtPayload
     {
         public string iss { get; set; }
+
         public string sub { get; set; }
-        public string aud => "https://revolut.com"; //hardcoded see documetation
-        public long exp 
+
+        /// <summary>
+        ///     Always "https://revolut.com" see documentation
+        /// </summary>
+        public string aud => "https://revolut.com";
+
+        public long iat => new DateTimeOffset(DateTime.UtcNow, TimeSpan.Zero).ToUnixTimeSeconds();
+
+        public long exp
         {
             get
             {
-                DateTimeOffset dto = new DateTimeOffset(DateTime.UtcNow, TimeSpan.Zero);
+                var dto = new DateTimeOffset(DateTime.UtcNow, TimeSpan.Zero);
                 return dto.ToUnixTimeSeconds() + 60 * 60;
             }
         }

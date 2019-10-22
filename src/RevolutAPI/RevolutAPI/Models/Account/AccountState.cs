@@ -1,8 +1,8 @@
 ﻿namespace RevolutAPI.Models.Account
 {
-    public class AccountState
+    internal class AccountState
     {
-        public static string ACTIVE = "active";
-        public static string INACTIVE = "inactive";
+        public const string Active = "active";
+        public const string Inactive = "inactive";
     }
 }

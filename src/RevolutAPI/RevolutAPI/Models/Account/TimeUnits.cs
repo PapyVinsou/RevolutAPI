@@ -1,8 +1,8 @@
 ﻿namespace RevolutAPI.Models.Account
 {
-    public class TimeUnits
+    internal class TimeUnits
     {
-        public static string DAYS = "days";
-        public static string HOURS = "hours";
+        public const string Days = "days";
+        public static string Hours = "hours";
     }
 }

@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RevolutAPI.Models.Account
+﻿namespace RevolutAPI.Models.Account
 {
-    public class CounterPartyData
+    internal class CounterPartyData
     {
         public string id { get; set; }
         public string type { get; set; }

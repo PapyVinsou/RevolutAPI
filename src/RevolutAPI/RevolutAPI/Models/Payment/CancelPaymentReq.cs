@@ -4,7 +4,6 @@ namespace RevolutAPI.Models.Payment
 {
     public class CancelPaymentReq
     {
-        [Required(AllowEmptyStrings = false)]
-        public string Id { get; set; }
+        [Required(AllowEmptyStrings = false)] public string Id { get; set; }
     }
 }

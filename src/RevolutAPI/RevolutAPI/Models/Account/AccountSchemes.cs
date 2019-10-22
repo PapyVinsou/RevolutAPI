@@ -1,6 +1,6 @@
 ﻿namespace RevolutAPI.Models.Account
 {
-    public class AccountSchemes
+    internal class AccountSchemes
     {
         public static string CHAPS = "chaps";
         public static string BACS = "bacs";

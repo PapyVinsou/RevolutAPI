@@ -1,27 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RevolutAPI.Models.Counterparties
+﻿namespace RevolutAPI.Models.Counterparties
 {
     public class AddNonRevolutCounterpartyReq
     {
-        public class AddressData
-        {
-            public string StreetLine1 { get; set; }
-            public string StreetLine2 { get; set; }
-            public string Region { get; set; }
-            public string Postcode { get; set; }
-            public string City { get; set; }
-            public string Country { get; set; }
-        }
-
-        public class IndividualNameData
-        {
-            public string FirstName { get; set; }
-            public string LastName { get; set; }
-        }
-
         public string CompanyName { get; set; }
         public IndividualNameData IndividualName { get; set; }
         public string BankCountry { get; set; }
@@ -34,7 +14,5 @@ namespace RevolutAPI.Models.Counterparties
         public string Email { get; set; }
         public string Phone { get; set; }
         public AddressData Address { get; set; }
-
-
     }
 }

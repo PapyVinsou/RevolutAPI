@@ -2,19 +2,19 @@
 {
     public class TransactionType
     {
-        public static string ATM = "atm";
-        public static string CARD_PAYMENT = "card_payment";
-        public static string CARD_REFUND = "card_refund";
-        public static string CARD_CHARGEBACK = "card_chargeback";
-        public static string CARD_CREDIT = "card_credit";
-        public static string EXCHANGE = "exchange";
-        public static string TRANSFER = "transfer";
-        public static string LOAN = "loan";
-        public static string FEE = "fee";
-        public static string REFUND = "refund";
-        public static string TOPUP = "topup";
-        public static string TOPUP_RETURN = "topup_return";
-        public static string TAX = "tax";
-        public static string TAX_REFUND = "tax_refund";
+        public const string Atm = "atm";
+        public const string CardPayment = "card_payment";
+        public const string CardRefund = "card_refund";
+        public const string CardChargeback = "card_chargeback";
+        public const string CardCredit = "card_credit";
+        public const string Exchange = "exchange";
+        public const string Transfer = "transfer";
+        public const string Loan = "loan";
+        public const string Fee = "fee";
+        public const string Refund = "refund";
+        public const string Topup = "topup";
+        public const string TopupReturn = "topup_return";
+        public const string Tax = "tax";
+        public const string TaxRefund = "tax_refund";
     }
 }

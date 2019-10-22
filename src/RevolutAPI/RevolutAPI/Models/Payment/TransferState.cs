@@ -2,10 +2,10 @@
 {
     public class TransferState
     {
-        public static string PENDING = "pending";
-        public static string COMPLETED = "completed";
-        public static string DECLINED = "declined";
-        public static string FAILED = "failed";
-        public static string CANCELLED = "cancelled";
+        public static string Pending = "pending";
+        public static string Completed = "completed";
+        public static string Declined = "declined";
+        public static string Failed = "failed";
+        public static string Cancelled = "cancelled";
     }
 }

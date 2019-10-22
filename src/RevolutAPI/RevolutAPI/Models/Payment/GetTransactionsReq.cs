@@ -18,17 +18,17 @@ namespace RevolutAPI.Models.Payment
 //    "topup_return"
 //    "tax"
 //    "tax_refund"
-    
-    
+
+
     public class GetTransactionsReq
     {
-        [Required]
-        public DateTime From { get; set; }
-        [Required]
-        public DateTime To { get; set; }
+        [Required] public DateTime From { get; set; }
+
+        [Required] public DateTime To { get; set; }
+
         public string CounterParty { get; set; }
         public int Count { get; set; }
-        [Required]
-        public string Type { get; set; }
+
+        [Required] public string Type { get; set; }
     }
 }

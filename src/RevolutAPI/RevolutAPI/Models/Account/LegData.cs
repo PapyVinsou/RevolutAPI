@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace RevolutAPI.Models.Account
+﻿namespace RevolutAPI.Models.Account
 {
-    public class LegData
+    internal class LegData
     {
         public string leg_id { get; set; }
         public string account_id { get; set; }
